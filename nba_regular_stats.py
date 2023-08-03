@@ -196,4 +196,4 @@ print(df_reg_top[off_def_stats])
 
 #Step 5: Saving the Data to csv Files
 df_reg_top.to_csv('nba_regular_stats_top.csv', index = False)
-df_reg_new.to_csv('nba_regular_stats_mvp_eligible', index = False)
+df_reg_new.to_csv('nba_regular_stats_mvp_eligible.csv', index = False)
