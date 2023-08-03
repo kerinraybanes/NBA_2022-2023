@@ -195,5 +195,8 @@ plt.show()
 print(df_playoff_top[off_def_stats])
 
 #Step 5: Saving the Data to csv Files
+df_playoff_top = df_playoff_top.reset_index()
 df_playoff_top.to_csv('nba_playoff_stats_top.csv', index = False)
+
+df_playoff_new = df_playoff_new.reset_index()
 df_playoff_new.to_csv('nba_playoff_stats_playoffmvp_eligible.csv', index = False)
