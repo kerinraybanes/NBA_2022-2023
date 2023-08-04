@@ -7,7 +7,7 @@ plt.style.use('ggplot')
 #STEP 0: IMPORTING AND READING DATA
 
 df_playoffs = pd.read_csv(r'C:\Users\Kerin B\Desktop\Datasets\nba_playoffs_2023.csv', delimiter=',')
-
+df_playoffs_standings = pd.read_csv(r'C:\Users\Kerin B\Desktop\Datasets\nba_playoff_standings.csv', delimiter=',')
 #---------------------------------------------------------------------------
 
 #STEP 1: DATA UNDERSTANDING
@@ -51,7 +51,7 @@ print("Duplicate Rows:")
 print(duplicates_df)
 
 #Drop Columns that will not be used for statistical analysis
-filtered_df_new = filtered_df.drop(['Rk', 'Age', 'Tm', 'GS'], axis=1)
+filtered_df_new = filtered_df.drop(['Rk', 'Age', 'GS'], axis=1)
 filtered_df_new.set_index('Player', inplace = True)
 print(filtered_df_new.head(5))
 
